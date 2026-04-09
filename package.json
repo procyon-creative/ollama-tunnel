@@ -1,0 +1,18 @@
+{
+  "name": "ollama-tunnel",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "node test.mjs",
+    "test:local": "node test.mjs --local"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "^2.0.41",
+    "ai": "^6.0.154",
+    "dotenv": "^17.4.1"
+  }
+}
