@@ -6,7 +6,7 @@ services:
       - OLLAMA_MODEL=${OLLAMA_MODEL:-tinyllama}
       - NVIDIA_VISIBLE_DEVICES=all
     volumes:
-      - ollama-data:/root/.ollama
+      - ${OLLAMA_DATA:-.ollama-data}:/root/.ollama
       - ./ollama-entrypoint.sh:/entrypoint.sh:ro
     ports:
       - "11434:11434"
@@ -28,5 +28,4 @@ services:
     restart: unless-stopped
 
 volumes:
-  ollama-data:
   tunnel-data:

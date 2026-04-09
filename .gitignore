@@ -2,3 +2,4 @@
 node_modules/
 access-credentials.json
 tunnel-config.json
+.ollama-data/
