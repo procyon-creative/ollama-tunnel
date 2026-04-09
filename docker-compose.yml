@@ -17,7 +17,7 @@ services:
       retries: 30
 
   cloudflared:
-    build: ../cloudflare-tunnel-init
+    image: ghcr.io/procyon-creative/cloudflare-tunnel-init:latest
     env_file: .env
     volumes:
       - ./tunnel-config.json:/config/tunnel-config.json:ro
